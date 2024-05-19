@@ -7,14 +7,22 @@ THis repository aim to create a website that can dectect and let users have chan
 This is a repository re-implementing the code of the paper ```Vietnamese-Hate-and-Offensive-Detection-using-PhoBERT-CNN-and-Social-Media-Streaming-Data```  for Data Mining final project
 
 # pretrain model
+
+### Phobert
 Since the file is over 500mb so i can not put in gihub, you need to go to this google colab to download:
 [phobert_cnn_model_part1_task2a_2.pt](https://drive.google.com/file/d/14W-JeIy6ZpO6UytWAa1p9LKWuudPHd_f/view?fbclid=IwAR1QXChK2rYCK1u9KTipD3QyeecsdFh4RdOZuVqKA-81P5XtW4XMumE3gdM)
 
 [phobert_cnn_model_part2_task2a_2.pt](https://drive.google.com/file/d/13IV3v-YjXgrtNWx-EzNUDEVmwBnb9uK3/view?fbclid=IwAR3qaFzsCgIKicv8NQyQiEHIwHY-ivMxIfm0C0Op-ru2MeAF0l8Ki_RKNrA)
 
+### BiLSTM and CNN-BiLSTM
+in folder final/HateSpeechDetectionApp/Models/result
+- **CNN_BiLSTM_model_reddit.h5** and **tokenizer_reddit.pickle** for CNN-BiLSTM
+- **BiLSTM.h5** and **tokenizer_1.pickle** for BiLSTM
+
 # Reference
 - ```PhoBERT```: Pre-trained language models for Vietnamese - https://github.com/VinAIResearch/PhoBERT
-- ```LSTM```: Research on Text Classification Based on CNN and LSTM - https://ieeexplore.ieee.org/abstract/document/8873454
+- ```BiLSTM```: BiLSTM for text classification - https://www.kaggle.com/code/lapidshay/bilstm-for-text-classification
+- ```CNN - BiLSTM```: Research on Text Classification Based on CNN and LSTM - https://ieeexplore.ieee.org/abstract/document/8873454
 - ```Convolutional Neural Networks``` for Sentence Classification - https://github.com/yoonkim/CNN_sentence
 - ```Apache spark```: a unified engine for big data processing - https://spark.apache.org/docs/3.1.1
 - ```Apache kafka```: a distributed event-store and streaming platform: - https://kafka.apache.org/
@@ -25,7 +33,8 @@ Since the file is over 500mb so i can not put in gihub, you need to go to this g
 # Model architecture
 ![Alt text](imgs/model.png) -->
 
-# Usage
+# Installation
+### for model
 - Install necessary packages from requirements.txt file
 ```bash
     pip install -r HateSpeechDetectionApp/requirements.txt
@@ -39,23 +48,88 @@ Since the file is over 500mb so i can not put in gihub, you need to go to this g
 
     bin/kafka-topics.sh --create --topic anomalies  --bootstrap-server localhost:9092
 ```
+### for website
+###### Part 1: Prepare the Environment
 
-- Run ```producer.py``` in ```HateSpeechDetectionApp``` folder to begin producing data to kafka ```rawData``` topic
+1.1. Install Visual Studio Code:
+
+- Visit the official Visual Studio Code page: https://code.visualstudio.com/
+- Download and install Visual Studio Code with your computer's compatible operating system.
+
+1.2. Install Node.js and npm:
+
+- Visit the official Node.js page: https://nodejs.org
+- Download and install Node.js and npm.
+- Check if Node.js is installed with the command
 ```bash
-    python HateSpeechDetectionApp/producer.py
+    node –v
+```
+1.3. Install Kafka:
+- Visit the Apache Kafka homepage (https://kafka.apache.org/downloads) to download the version of Kafka you want to install. Choose the version suitable for your operating system.
+
+###### Part 2: Install libraries for reactjs:
+
+2.1. Create a website using npm
+- Go to the folder you want to put the website in
+- Open terminal and type: 
+```bash
+    npx create-react-app ${Name of the website you want}
 ```
 
-- Run ```spark-flask.py``` in ```HateSpeechDetectionApp``` to set up the App, the data from the web will be retrieved from ```cleanData``` topic
+2.2. Unzip the source code files
+- Move the 2 files src and server file into the web folder you just created (overwrite the original file)
+- Move the **final** file to a separate folder (It's best to keep it in drive D so you don't need to change the path inside the file)
+
+2.3. Install libraries for ReactJS:
+- Go to the server directory and open terminal and type:
+
 ```bash
-    python HateSpeechDetectionApp/spark-flask.py
+pip install Flask pymongo requests google-api-python-client beautifulsoup4
+npm install express cors
 ```
 
-- Finally run ```streaming.py``` in ```HateSpeechDetectionApp``` so that Spark can process the streaming data in realtime and load it to the ```cleanData``` topic
+- Go to the main directory of the website, open terminal and type:
+
 ```bash
-    spark-submit streaming.py
+npm install react recharts axios react-icons qrcode.react react-spinners
+```
+
+###### Part 3: Install API for YouTube (For your YouTube account)
+
+- Go to [Google Cloud Console](https://console.cloud.google.com/), go to APIs and services and create a new project
+- Go to the OAuth consent screen and create a new External server
+- Go to the Identifiants section in Create IDs to create an API key and an OAuth client ID
+- Go to Library to find Youtube Data API v3 and start it
+- Finally, go into the Flask.py file (in the server) and the producer.py file (in **final** folder) change the value of Developer_Key with the new API key and change the path of Client_secret_life (in reject_comment.py) with the path of the file OAuth client ID
+
+###### Part 4: Start the Web
+
+4.1. Start the Zookeeper server
+```bash
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1--partition 1 --topic “topic_name”
+```
+
+4.2. Start Consumer
+
+Run file consumer.py
+
+4.3. Launch Web
+
+• Open a terminal in the server folder and type: node server.js
+• Open a terminal in the server folder and type: python FlaskP.py
+• Open a terminal in the main web folder and type: 
+```bash
+npm start
 ```
 
 
+
+# Model Evaluation
+![Model Evaluation](final/HateSpeechDetectionApp/imgs/image.png)
 
 <!-- # Evaluation on test dataset
 | Metric | Precision | Recall | F1-score | Support |
