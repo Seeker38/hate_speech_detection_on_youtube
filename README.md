@@ -1,23 +1,29 @@
-# Vietnamese-Hate-and-Offensive-Detection-using-PhoBERT-CNN-and-Social-Media-Streaming-Data
+# Vietnamese Hate Speech Detection on Youtube using PhoBERT-CNN; BiLSTM-CNN; BiLSTM and Logistic Regression
+THis repository aim to create a website that can dectect and let users have chances to deal with different type of comments on youtube:
+- Clean
+- Offensive
+- Hate
+
 This is a repository re-implementing the code of the paper ```Vietnamese-Hate-and-Offensive-Detection-using-PhoBERT-CNN-and-Social-Media-Streaming-Data```  for CS431 final project
 
-Link paper: https://arxiv.org/pdf/2206.00524.pdf
+# pretrain model
+Since the file is over 500mb so i can not put in gihub, you need to go to this google colab to download:
+[phobert_cnn_model_part1_task2a_2.pt](https://drive.google.com/file/d/14W-JeIy6ZpO6UytWAa1p9LKWuudPHd_f/view?fbclid=IwAR1QXChK2rYCK1u9KTipD3QyeecsdFh4RdOZuVqKA-81P5XtW4XMumE3gdM)
 
-Author's gmail: 18520908@gm.uit.edu.vn
-
-Author's github: https://github.com/kh4nh12
+[phobert_cnn_model_part2_task2a_2.pt](https://drive.google.com/file/d/13IV3v-YjXgrtNWx-EzNUDEVmwBnb9uK3/view?fbclid=IwAR3qaFzsCgIKicv8NQyQiEHIwHY-ivMxIfm0C0Op-ru2MeAF0l8Ki_RKNrA)
 
 # Reference
 - ```PhoBERT```: Pre-trained language models for Vietnamese - https://github.com/VinAIResearch/PhoBERT
+- ```LSTM```: Research on Text Classification Based on CNN and LSTM - https://ieeexplore.ieee.org/abstract/document/8873454
 - ```Convolutional Neural Networks``` for Sentence Classification - https://github.com/yoonkim/CNN_sentence
 - ```Apache spark```: a unified engine for big data processing - https://spark.apache.org/docs/3.1.1
 - ```Apache kafka```: a distributed event-store and streaming platform: - https://kafka.apache.org/
 
-# Project architecture
+<!-- # Project architecture
 ![Alt text](imgs/architecture.png)
 
 # Model architecture
-![Alt text](imgs/model.png)
+![Alt text](imgs/model.png) -->
 
 # Usage
 - Install necessary packages from requirements.txt file
@@ -51,7 +57,7 @@ Author's github: https://github.com/kh4nh12
 
 
 
-# Evaluation on test dataset
+<!-- # Evaluation on test dataset
 | Metric | Precision | Recall | F1-score | Support |
 |---|---|---|---|---|
 | 0 | 0.9284 | 0.9261 | 0.9273 | 5562 |
@@ -63,4 +69,4 @@ Author's github: https://github.com/kh4nh12
 
 # Compare with other studies
 ![Alt text](imgs/compare.png)
-- Outperfrom other approachs related to VietNamese Hate Speech Detection
+- Outperfrom other approachs related to VietNamese Hate Speech Detection -->
