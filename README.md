@@ -67,6 +67,11 @@ in folder final/HateSpeechDetectionApp/Models/result
 1.3. Install Kafka:
 - Visit the Apache Kafka homepage (https://kafka.apache.org/downloads) to download the version of Kafka you want to install. Choose the version suitable for your operating system.
 
+1.4. Install MongoDB:
+- Download MongoDB: Visit the MongoDB homepage: mongodb.com/try/download/community. Choose the version suitable for your operating system and download it.
+- Install MongoDB: Run the installation file (.msi) you just downloaded. Select "Complete" when asked about the installation type. Select "Run service as Network Service user" to run MongoDB as a Windows service.
+- Environment setup: Create folder C:\data\db to store MongoDB data.
+
 ###### Part 2: Install libraries for reactjs:
 
 2.1. Create a website using npm
@@ -93,6 +98,10 @@ npm install express cors
 ```bash
 npm install react recharts axios react-icons qrcode.react react-spinners
 ```
+
+2.4. Set up database and collection for data storage:
+
+- Change the names of databases and collections contained in the server, visomences and src files to match your created and set up database and collection names.
 
 ###### Part 3: Install API for YouTube (For your YouTube account)
 
