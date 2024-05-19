@@ -1,0 +1,11 @@
+{"comment_id": "UgzaZoJzS9UeOf_PVPR4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:25:25Z", "raw_comment": "ok nha", "clean_comment": "được nhé", "label": 0}
+{"comment_id": "UgwjNbgtm5lW6ocyU6x4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:24:44Z", "raw_comment": "ngo n lun", "clean_comment": "ngo n luôn", "label": 0}
+{"comment_id": "UgxJZmzGsT2oqNg11fx4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:20:51Z", "raw_comment": "ok", "clean_comment": "được", "label": 0}
+{"comment_id": "Ugyko_hyE0VcGGXYsg94AaABAg", "author": "@hamichi4279", "datetime": "2024-05-16T17:33:30Z", "raw_comment": "ok", "clean_comment": "được", "label": 0}
+{"comment_id": "UgyzElpv08glm1uzMgR4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-16T09:03:54Z", "raw_comment": "to thay bth", "clean_comment": "to thay bình_thường", "label": 0}
+{"comment_id": "UgypFCcdn3ljEkHur1R4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:28:25Z", "raw_comment": "nhỉ", "clean_comment": "nhỉ", "label": 0}
+{"comment_id": "UgyakPFLhQdkh19so8t4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:28:22Z", "raw_comment": "đúng ko cưng", "clean_comment": "đúng không cưng", "label": 0}
+{"comment_id": "UgwYd6Evb_ke3oQ8pNl4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:28:17Z", "raw_comment": "juan", "clean_comment": "juan", "label": 0}
+{"comment_id": "UgzgVVQfAMnaFyPJq1t4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:28:13Z", "raw_comment": "thêm bluan", "clean_comment": "thêm bluan", "label": 0}
+{"comment_id": "Ugy3rF_K6fdcHc9uO3l4AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:28:40Z", "raw_comment": "chắc ok rùi đó", "clean_comment": "chắc được rồi đó", "label": 0}
+{"comment_id": "UgwTAurijtFmhjX7X114AaABAg", "author": "@hamichi4279", "datetime": "2024-05-19T09:28:34Z", "raw_comment": "ok chưa", "clean_comment": "được chưa", "label": 0}

@@ -1,0 +1,99 @@
+.App {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(249, 210, 179);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.mainApp {
+    display: flex;
+    height: 90%;
+    width: 90%;
+    border-radius: 40px;
+    background-color: rgb(227, 123, 88);
+}
+
+.mainButton {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainBt {
+    background: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.topmainBt {
+    background: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.botmainBt {
+    background: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin-top: 4rem;
+}
+
+.mainBt:hover {
+    cursor: pointer;
+}
+
+.detailApp {
+    display: flex;
+    width: 90%;
+    border-radius: 40px;
+    background-color: rgb(254, 248, 236);
+    height: 100%;
+}
+
+.charts {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.c1 {
+    height: 30%;
+}
+
+.c2 {
+    height: 70%;
+}
+
+.profileApp {
+    width: 30%;
+    border-radius: 40px;
+    background-color: #fff;
+    height: 100%;
+}
+.hd {
+    height: 10%;
+    width: 100%;
+}
+
+.cm {
+    height: 40%;
+    width: 100%;
+}
+
+.ft {
+    height: 50%;
+    width: 100%;
+}

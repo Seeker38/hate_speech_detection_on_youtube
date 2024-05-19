@@ -1,0 +1,98 @@
+.feature-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    margin-top: 15%;
+    border: 2px solid black;
+    margin-top: -5rem;
+}
+
+.report h1 {
+    /* text-align: center; */
+    color: rgb(227, 123, 88);
+    margin-bottom: -0.2rem;
+}
+
+.report p {
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.statistic {
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    margin-top: -11rem;
+}
+
+.fuck1 {
+    color: #ff0000;
+    font-weight: 900;
+}
+
+.fuck2 {
+    color: rgb(255, 170, 0);
+    font-weight: 900;
+}
+
+.fuck3 {
+    color: #9acd32;
+    font-weight: 900;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block span {
+    color: red;
+    font-weight: 700;
+}
+
+.block button {
+    border: none;
+    background-color: rgb(227, 123, 88);
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    transition: 0.5s;
+}
+
+.block button:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.deleteAll {
+    border: 2px solid rgb(227, 123, 88);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    margin-top: 1rem;
+    transition: 0.5s;
+}
+
+.deleteAll:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.helper {
+    color: #9acd32;
+    font-weight: 700;
+}

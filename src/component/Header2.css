@@ -1,0 +1,20 @@
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.info img {
+    width: 20rem;
+    height: 15rem;
+    border: 5px solid rgb(227, 123, 88);
+}
+
+.info p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}

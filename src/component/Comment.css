@@ -1,0 +1,103 @@
+.comment {
+    width: 43.5rem;
+    height: 25rem;
+    overflow: auto;
+    position: absolute;
+    z-index: 999;
+    
+}
+
+.commentTable {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.commentTable th,
+.commentTable td {
+  border: 2px solid #000;
+  padding: 8px;
+}
+
+.tableHead {
+    position: sticky;
+    text-align: left;
+    background-color: rgb(227, 123, 88);
+    z-index: 1000;
+    top: 0;
+}
+
+.tableHead th {
+    color: white;
+}
+
+.tableBody {
+    position: relative;
+    z-index: 998;
+}
+
+.column-0 {
+    width: 15%;
+    overflow: hidden;
+}
+
+.column-1 {
+    width: 10%;
+    overflow: hidden;
+}
+
+.column-2 {
+    width: 15%
+}
+
+.column-3 {
+    width: 25%
+}
+
+.column-4 {
+    width: 25%
+}
+
+.column-5 {
+    text-align: center;
+    width: 5%
+}
+
+.delete {
+    text-align: center;
+    width: 5%;
+}
+
+.deleteBt {
+    border: 2px solid rgb(227, 123, 88);
+    background-color: transparent;
+    color: rgb(227, 123, 88);
+    height: 2rem;
+    width: 2.5rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.deleteBt:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.row {
+    margin-top: 2rem;
+    margin-bottom: 2px;
+}
+
+.authorBtn {
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: transparent;
+    color: rgb(225, 100, 58);
+}
+
+.authorBtn:hover {
+    cursor: pointer;
+}

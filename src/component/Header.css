@@ -1,0 +1,41 @@
+.link {
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link input {
+    width: 32rem;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.link input::placeholder {
+    color: rgb(227, 123, 88);
+}
+
+.link button {
+    border: none;
+    background-color: rgb(227, 123, 88);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+.link button:hover {
+    cursor: pointer;
+}
