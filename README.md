@@ -4,7 +4,7 @@ THis repository aim to create a website that can dectect and let users have chan
 - Offensive
 - Hate
 
-This is a repository re-implementing the code of the paper ```Vietnamese-Hate-and-Offensive-Detection-using-PhoBERT-CNN-and-Social-Media-Streaming-Data```  for CS431 final project
+This is a repository re-implementing the code of the paper ```Vietnamese-Hate-and-Offensive-Detection-using-PhoBERT-CNN-and-Social-Media-Streaming-Data```  for Data Mining final project
 
 # pretrain model
 Since the file is over 500mb so i can not put in gihub, you need to go to this google colab to download:
