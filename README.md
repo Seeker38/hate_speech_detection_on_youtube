@@ -1,4 +1,4 @@
-# Vietnamese Hate Speech Detection on Youtube using PhoBERT-CNN; BiLSTM-CNN; BiLSTM and Logistic Regression
+# Vietnamese Hate Speech Detection on Youtube using PhoBERT-CNN; CNN-BiLSTM; BiLSTM and Logistic Regression
 THis repository aim to create a website that can dectect and let users have chances to deal with different type of comments on youtube:
 - Clean
 - Offensive
